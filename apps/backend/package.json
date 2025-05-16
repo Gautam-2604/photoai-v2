@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node index.ts"
+    "start": "ts-node index.ts",
+    "dev": "ts-node index.ts"
   },
   "keywords": [],
   "author": "",
@@ -13,7 +14,13 @@
     "ts-node": "^10.9.2"
   },
   "dependencies": {
+    "@aws-sdk/client-s3": "^3.810.0",
+    "@aws-sdk/s3-request-presigner": "^3.810.0",
+    "@fal-ai/client": "^1.4.0",
     "@types/express": "^5.0.1",
+    "common": "*",
+    "db": "*",
+    "dotenv": "^16.5.0",
     "express": "^5.1.0"
   }
 }
