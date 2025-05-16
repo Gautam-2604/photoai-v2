@@ -11,16 +11,24 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@types/cors": "^2.8.18",
+    "@types/jsonwebtoken": "^9.0.9",
     "ts-node": "^10.9.2"
   },
   "dependencies": {
     "@aws-sdk/client-s3": "^3.810.0",
     "@aws-sdk/s3-request-presigner": "^3.810.0",
+    "@clerk/clerk-sdk-node": "^4.13.23",
     "@fal-ai/client": "^1.4.0",
     "@types/express": "^5.0.1",
     "common": "*",
+    "cors": "^2.8.5",
     "db": "*",
     "dotenv": "^16.5.0",
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "razorpay": "^2.9.6",
+    "stripe": "^18.1.0",
+    "svix": "^1.65.0"
   }
 }
