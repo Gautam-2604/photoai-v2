@@ -1,10 +1,17 @@
-
+"use client";
+import { Hero } from "@/components/home/Hero"
+import { useAuth } from "@/hooks/useAuth";
+import { redirect } from "next/navigation";
 
 
 export default function Home() {
+  const { user } = useAuth();
+  if (user) {
+    redirect("/dashboard");
+  }
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <div>
+      <Hero />
+    </div>
   );
 }

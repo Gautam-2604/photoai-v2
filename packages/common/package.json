@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "exports":{
-    "./types":"./types.ts"
+    "./types":"./types.ts",
+    "./infered":"./infered-types.ts"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
