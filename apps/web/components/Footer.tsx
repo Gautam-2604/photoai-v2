@@ -21,7 +21,7 @@ export function Footer() {
               >
                 <path d="M15 6v12a3 3 0 1 0 3-3H6a3 3 0 1 0 3 3V6a3 3 0 1 0-3 3h12a3 3 0 1 0-3-3" />
               </svg>
-              <span className="font-bold font-mono text-xl">100xPhoto</span>
+              <span className="font-bold font-mono text-xl">GGPhoto</span>
             </div>
 
             <p className="mt-4 max-w-sm text-muted-foreground">
@@ -32,7 +32,7 @@ export function Footer() {
             <div className="mt-6 flex gap-4">
               <Button variant="ghost" size="icon" asChild>
                 <Link
-                  href="https://x.com/100xdevs"
+                  href="https://x.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -54,7 +54,7 @@ export function Footer() {
               </Button>
               <Button variant="ghost" size="icon" asChild>
                 <Link
-                  href="https://github.com/code100x/photo-ai"
+                  href="https://github.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

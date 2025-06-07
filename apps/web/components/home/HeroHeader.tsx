@@ -33,7 +33,7 @@ export function HeroHeader() {
           className="px-4 py-2 rounded-full dark:bg-pink-500/10 dark:text-pink-300 text-sm font-medium flex items-center gap-2 border dark:border-pink-600/20 bg-pink-600/10 text-pink-500 border-pink-700/20"
         >
           <Zap className="w-4 h-4" />
-          Powered by 100xDevs
+          Powered by GG Dev
         </motion.span>
       </div>
 

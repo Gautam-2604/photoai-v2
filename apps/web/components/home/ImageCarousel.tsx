@@ -89,9 +89,10 @@ export function ImageCarousel() {
                   <div className="absolute inset-0 bg-gradient-to-br from-purple-500/30 to-pink-500/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   <Image
                     src={
-                      typeof image === "object" && "url" in image
-                        ? image.url
-                        : ""
+                      // typeof image === "object" && "url" in image
+                      //   ? image.url
+                      //   : 
+                      ""
                     }
                     alt={
                       typeof image === "object" && "title" in image

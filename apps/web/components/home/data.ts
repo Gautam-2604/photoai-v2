@@ -79,7 +79,7 @@ export const features = [
   export const brands = [
     {
       name: "Company 1",
-      logo: "https://media.licdn.com/dms/image/v2/D563DAQFdWbNq8YmjeA/image-scale_191_1128/image-scale_191_1128/0/1721141166811/100xdevs_cover?e=2147483647&v=beta&t=a1Ox9U8BLucp5rHxhTXRmUhMoMAKTDrs-IyjT547lPQ",
+      logo: "/logos/logo1.svg"
     },
     { name: "Company 2", logo: "/logos/logo2.svg" },
     { name: "Company 3", logo: "/logos/logo3.svg" },

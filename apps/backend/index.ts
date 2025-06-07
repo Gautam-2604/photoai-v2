@@ -7,7 +7,7 @@ import { getSignedUrl } from "@aws-sdk/s3-request-presigner";
 import dotenv from 'dotenv';
 import cors from 'cors'
 
-import paymentRoutes from "./routes/payment.routes";
+// import paymentRoutes from "./routes/payment.routes";
 import { router as webhookRouter } from "./routes/webhook.routes";
 import { fal } from '@fal-ai/client';
 import { authMiddleware } from './middleware';
@@ -22,7 +22,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: ["https://photo.100xdevs.com", "http://localhost:3000"],
+    origin: [ "http://localhost:3000"],
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
@@ -448,7 +448,7 @@ app.get("/model/status/:modelId", authMiddleware, async (req, res) => {
   }
 });
 
-app.use("/payment", paymentRoutes);
+// app.use("/payment", paymentRoutes);
 app.use("/api/webhook", webhookRouter);
 
 

@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { loadStripe } from "@stripe/stripe-js";
-import { useToast } from "@/hooks/use-toast";
 import { useAuth } from "@clerk/nextjs";
 import { BACKEND_URL } from "@/app/config";
 import { RazorpayResponse } from "@/types";
@@ -13,7 +12,6 @@ export const creditUpdateEvent = new EventTarget();
 
 export function usePayment() {
   const [isLoading, setIsLoading] = useState(false);
-  const { toast } = useToast();
   const { getToken } = useAuth();
 
   const handlePayment = async (plan: "basic" | "premium", p0: boolean, p1: string) => {
@@ -67,11 +65,13 @@ export function usePayment() {
       const razorpay = new (window as any).Razorpay(options);
       razorpay.open();
     } catch (error) {
-      toast({
-        title: "Payment Error",
-        description: "Failed to initialize payment",
-        variant: "destructive",
-      });
+      // toast({
+      //   title: "Payment Error",
+      //   description: "Failed to initialize payment",
+      //   variant: "destructive",
+      // });
+      console.log("Payment Error");
+      
       window.location.href = "/payment/cancel";
     } finally {
       setIsLoading(false);
