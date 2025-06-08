@@ -12,6 +12,7 @@ export const creditUpdateEvent = new EventTarget();
 
 export function usePayment() {
   const [isLoading, setIsLoading] = useState(false);
+  
   const { getToken } = useAuth();
 
   const handlePayment = async (plan: "basic" | "premium", p0: boolean, p1: string) => {
